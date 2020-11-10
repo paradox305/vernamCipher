@@ -28,8 +28,8 @@ def cipherprocess(convertNumlist,modedCipher,deckOfcards):
         #Recode This part
         finalText = None
         finalText4 = None
-        if bitSumcipher%26 == 0 :
-            finalText4 = 122
+        if bitSumcipher%26 == 0 :  #As when the result is zero the program acts stupid 
+            finalText4 = 122       #hence hadto explicitely write for to print "Z" 122is the ascii value of Z
         elif bitSumcipher%26 != 0:
             finalText = bitSumcipher%26
             finalText4 = (finalText)+96
